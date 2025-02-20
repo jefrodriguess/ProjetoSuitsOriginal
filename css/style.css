@@ -22,6 +22,13 @@ img {
     width: 100%;
 }
 
+i {
+    background-color: var(--main-color);
+    color: var(--primary-text-color);
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
 /* id */
 #header{
     min-height: 90vh;
@@ -109,3 +116,169 @@ img {
 .dot.active{
     background-color: var(--secondary-bg-color);
 }
+
+/* ÁREAS DE ATUAÇÃO */
+
+.text-image-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    flex: 2 1 0;
+    gap: 2rem;
+    justify-content: center;
+    text-align: right;
+    font-weight: bold;
+}
+
+.image-container{
+    flex: 1 1 300px;
+    position: relative;
+}
+
+.image-container i{
+    position: absolute;
+}
+
+.section-title{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+.section-subtitle{
+    color: var(--secondary-text-color);
+    font-size: 2rem;
+}
+
+.btn{
+    padding: 1.2rem 1.8rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    background-color: var(--main-color);
+    color: var(--primary-text-color);
+    align-self: end;
+}
+
+#other-services{
+    width: 100%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap:2rem;
+    padding: 2rem;
+}
+
+.service{
+    position: relative;
+}
+
+.service i{
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+.service-info{
+    background-color: var(--tertiary-color);
+    padding: 2rem 1.4rem;
+    min-height: 250px;
+}
+
+.service h4{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+/* Section about - Sobre nós */
+#about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+#about-text{
+    background-image: url("../images/pattern.png");
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-text-color);
+    display: flex;
+    flex: 1 1 0;
+    /* flex: grow shrink basis */
+    /* grow - define quanto o elemento cresce em relação aos outros */
+    /* shrink - define quanto ele encolhe quando não há espaço */
+    /* basis - define o tamanho inicial do elemento antes de aplicar o crescimento e encolhimento */
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 3rem;
+
+}
+
+#about-text .section-subtitle,
+#about-text .section-title{
+    color: var(--primary-text-color)
+}
+
+#about-text i {
+    background-color: transparent;
+}
+
+.about-description{
+    display: flex;
+    align-items: center; 
+}
+
+.about-description h4{
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+#about-data{
+    display: flex;
+    flex: 1 1 0;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+#about-data .data{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin-top: -1px; /* para alinhar a first-child e last-child */
+    margin-left: -1px; /* para alinhar a first-child e last-child */
+}
+
+#about-data .data:first-child{
+    border-right: 1px solid var(--secondary-text-color);
+    border-bottom: 1px solid var(--secondary-text-color);
+}
+
+#about-data .data:last-child{
+    border-left: 1px solid var(--secondary-text-color);
+    border-top: 1px solid var(--secondary-text-color);
+}
+
+.data:
+
+
+#about-data .data i{
+    background-color: transparent;
+    color: var(--main-color);
+    font-size: 4rem;
+    padding: 0;
+}
+
+.data .number{
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.data .text {
+    text-transform: uppercase;
+}
+
