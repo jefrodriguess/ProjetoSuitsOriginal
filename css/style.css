@@ -280,3 +280,40 @@ i {
     text-transform: uppercase;
 }
 
+/* Depoimentos  */
+
+#testimonial{
+    display: flex;
+    align-items: center;
+}
+
+#testimonial-information{
+    padding: 3rem;
+
+}
+
+.author{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+
+.author img{
+    width: 100px;
+    height: 100px;
+}
+
+.author .author-name{
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.author .author-job{
+    color: var(--secondary-text-color);
+}
