@@ -289,7 +289,6 @@ i {
 
 #testimonial-information{
     padding: 3rem;
-
 }
 
 .author{
@@ -317,3 +316,39 @@ i {
 .author .author-job{
     color: var(--secondary-text-color);
 }
+
+
+/* Colaboradores */
+
+#team span{
+    color: var(--main-color);
+}
+
+#team h2{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1rem;   
+}
+
+.employees{
+    display: flex;
+    gap: 1rem;
+}
+
+.employee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.employee img{
+    margin-bottom: 0.5rem;
+}
+
+.employee .employee-name{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+
