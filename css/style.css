@@ -405,7 +405,6 @@ i {
     flex: 0.5;
     padding: 1rem;
     border: none;
-    /* width: 100%; */
 }
 
 #contact-information .btn{
@@ -420,3 +419,90 @@ i {
     background-color: var(--primary-text-color);
     color: var(--main-color);
 }
+
+/* Rodapé */
+
+ #footer {
+  color: var(--primary-text-color); /* Cor do texto */
+  background-color: var(--secondary-bg-color); /* Cor do fundo*/
+  display: flex; /* Flexiona horizontlmente as divs contact-info e links-container */
+  justify-content: space-around;
+  padding: 3rem 3rem 5rem; /*Adiciona preencimento interno top, bottom e left/right */
+}
+
+  #footer i {
+  font-size: 1rem; /* Tamanho dos icones */
+  padding: 0.3rem; /* preenchimento interno */
+}
+
+#footer a {
+  color: var(--primary-text-color); /*Cor dos links*/
+}
+
+.contact-info,
+.links-container {
+  width: 20%; /* largura das sub divs dentro das classes declaradas  */
+}
+
+.footer-brand {
+  margin-bottom: 2rem; /* margem inferior da classe */
+}
+
+.footer-brand h2 {
+  background-color: var(--main-color); /* Cor de fundo  do subtitulo h2*/
+  margin-bottom: 0.5rem; /* Margem inferior do subtitulo */
+  padding: 1rem; /*Preencimento interno do subtitulo */
+}
+
+.contact-info p {
+  margin-bottom: 1rem; /* Margem inferior de p */
+}
+
+.contact-info p i {
+  background-color: transparent; /* transparencia na cor de fundo dos incones*/
+  padding: 0; /* sem preenchimento interno  */
+  color: var(--main-color); /* Cor do Icone */
+}
+
+.social-networks p {
+  margin-bottom: 1rem; /* margem inferior de p */
+}
+
+.networks {
+  margin-top: 2rem; /* Margem superior dos icones de rede social  */
+  display: flex; /* flexão para manipular o gap */
+  gap: 1rem; /* distancia entre os incones de rede social*/
+
+}
+
+#footer .networks i {
+  padding: 1rem; /* preenchimento interno */
+}
+
+.links-container h4 {
+  text-transform: uppercase; /* letra maiúscula*/
+  margin-bottom: 3rem; /* margem inferior do h4*/
+}
+
+.links-container nav {
+  display: flex; /* flexão do conteúdo da div nav*/
+  flex-direction: column; /* diereção em coluna  */
+}
+
+.links-container nav a {
+  padding-bottom: 1rem; /* preenchimento interno inferior*/
+  margin-bottom: 1rem; /* magem inferior*/
+  border-bottom: 1px solid var(--secondary-color); /* (borda)linha horizontal */
+}
+
+.phone-number {
+  display: flex; /* flexão do conteudo da classe */
+  border: 1px solid var(--main-color); /* borda entorno do telefone*/
+  gap: 1rem; /* preenchimento interno */
+  align-items: center; /* Alinhamento ao centro*/
+  margin-bottom: 1rem; /* margem inferior*/
+}
+
+.phone-info {
+  color: var(--secondary-color); /* cor da fonte */
+} 
